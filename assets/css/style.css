@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Sunflower:wght@300&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+section{
+    background: #F6E300;
+    min-height: 100vh;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.accordion {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.border-0{
+    border: 0;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.accordion-item {
+  position: relative;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  background: #fff03f;
+  transition: all 0.3s;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-right: 70px;
+}
+
+.accordion-header:hover {
+  background: #f8e836;
+}
+
+.accordion-header img {
+  margin-right: 15px;
+  width: 24px;
+  height: 24px;
+}
+h1{
+font-family: Poppins;
+font-size: 48px;
+font-weight: 700;
+line-height: 72px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.pt-58{
+    padding-top: 58px;
+}
+.pb-26{
+    padding-bottom: 26px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background: #fff03f;
+font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 32.4px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
+.accordion-header.active + .accordion-content {
+  display: block;
+}
+.arrow {
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
