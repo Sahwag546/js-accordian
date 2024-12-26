@@ -114,4 +114,5 @@ text-decoration-skip-ink: none;
 .arrow{
   position: absolute;
   right: 20px;
+  transition: all 300ms linear;
 }
