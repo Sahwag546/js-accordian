@@ -32,7 +32,9 @@ section{
 .accordion-item {
   position: relative;
 }
-
+.mt-88{
+  margin-top: 88px;
+}
 .accordion-header {
   display: flex;
   align-items: center;
@@ -78,8 +80,13 @@ text-decoration-skip-ink: none;
 .center{
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.cursor{
+  cursor: pointer;
+}
 .accordion-content {
   display: none;
   padding: 15px;
