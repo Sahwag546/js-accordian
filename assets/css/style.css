@@ -108,9 +108,10 @@ text-decoration-skip-ink: none;
 .accordion-header.active + .accordion-content {
   display: block;
 }
-.arrow {
+.accordion-header.active .arrow{
+  rotate: 180deg !important;
+}
+.arrow{
   position: absolute;
   right: 20px;
-  display: inline-block;
-  transition: transform 0.3s;
 }

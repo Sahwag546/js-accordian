@@ -14,7 +14,7 @@
         <div class="container">
     <div class="accordion">
         <div class="accordion-item mb-8">
-            <h2 class="accordion-header" onclick="toggleAccordion(this)">
+            <h2 class="accordion-header">
                 <img class="arrow" src="./assets/image/svg/vector1.svg" alt="">
             Amet vel eget nisi, sed ut massa turpis sodales nunc.
             </h2>
@@ -23,7 +23,7 @@
             </p>
         </div>
          <div class="accordion-item mb-8">
-            <h2 class="accordion-header" onclick="toggleAccordion(this)">
+            <h2 class="accordion-header">
                 <img class="arrow" src="./assets/image/svg/vector1.svg" alt="vector">
             Amet vel eget nisi, sed ut massa turpis sodales nunc.
             </h2>
@@ -32,7 +32,7 @@
             </p>
         </div>
          <div class="accordion-item mb-8">
-            <h2 class="accordion-header" onclick="toggleAccordion(this)">
+            <h2 class="accordion-header">
                 <img class="arrow" src="./assets/image/svg/vector1.svg" alt="vector">
             Amet vel eget nisi, sed ut massa turpis sodales nunc.
             </h2>
@@ -41,7 +41,7 @@
             </p>
         </div>
          <div class="accordion-item mb-8">
-            <h2 class="accordion-header" onclick="toggleAccordion(this)">
+            <h2 class="accordion-header">
                 <img class="arrow" src="./assets/image/svg/vector1.svg" alt="vector">
             Amet vel eget nisi, sed ut massa turpis sodales nunc.
             </h2>
@@ -50,7 +50,7 @@
             </p>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header" onclick="toggleAccordion(this)">
+            <h2 class="accordion-header">
                 <img class="arrow" src="./assets/image/svg/vector1.svg" alt="vector">
             Amet vel eget nisi, sed ut massa turpis sodales nunc.
             </h2>
@@ -79,26 +79,12 @@
                 // Toggle the clicked item
                 if (!isActive) {
                     header.classList.add('active');
-                    header.nextElementSibling.style.display = 'block';
+                    header.nextElementSibling.style.display = 'block';                                          
                 }
             });
         });
     </script>
-    <!-- rotate arrow -->
-     <script>
-        function toggleAccordion(header) {
-    const content = header.nextElementSibling;
-    const arrow = header.querySelector('.arrow');
 
-    // Toggle the display of the content
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        arrow.style.transform = "rotate(0deg)";
-    } else {
-        content.style.display = "block";
-        arrow.style.transform = "rotate(180deg)";
-    }
-}
      </script>
 </body>
 
